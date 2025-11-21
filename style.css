@@ -1,0 +1,452 @@
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", "poppins", sans-serif;
+  /* background: rgb(255, 182, 87); */
+}
+body {
+  background: rgb(222, 245, 200);
+}
+
+.main {
+  height: 100vh;
+  padding-bottom: 5rem;
+}
+
+/* --------------------------NAVBAR----------------------- */
+.navbar {
+  /* border-bottom: 1px solid rgb(0, 0, 0); */
+}
+.navbar ul {
+  list-style: none;
+  font-family: "poppins", sans-serif;
+  font-size: 1.43rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1.25rem 15rem;
+  justify-content: space-evenly;
+}
+.navbar ul a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.nav-logo {
+  display: none;
+}
+
+.navbar ul a:hover {
+  background: rgba(0, 255, 136, 0.166);
+  color: #1f3a1f;
+}
+
+/* -------------------------------HOME-------------------------------- */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+}
+.name {
+  width: 49vw;
+  display: block;
+}
+.hero h1,
+h3 {
+  font-family: "cinzel", "poppins";
+  padding-left: 12rem;
+  line-height: 1.1;
+  letter-spacing: 1.4;
+}
+
+.hero h1 {
+  padding-top: 13rem;
+  font-size: 6rem;
+  font-weight: 800;
+  display: inline-block;
+}
+.hero h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.address {
+  font-size: 0.87rem;
+  padding-left: 12rem;
+  padding-top: 1rem;
+  display: inline-block;
+  line-height: 1.2;
+  letter-spacing: 1.4;
+}
+.logo {
+  /* height: 400px; */
+  width: 49vw;
+}
+.logo img {
+  padding: 1rem 6rem;
+  height: 75%;
+  width: 65%;
+  margin-top: 5rem;
+  margin-left: 3rem;
+}
+
+/* --------------------about------------------ */
+.about-container {
+  width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex: 1 1 0;
+}
+.about-img {
+  width: 40%;
+  min-width: 250px;
+
+  background: pink;
+}
+.about-details {
+  width: 40%;
+  min-width: 250px;
+  background: #4288426e;
+}
+
+/* ------------------------------------------INSTRUMENTS------------------------------ */
+.instrument-head h3{
+  font-family: "poppins",sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  padding-left: 3rem;
+  padding-bottom: 2rem;
+  color: #1B4332;
+
+}
+.instruments-container {
+  width: 85vw;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 2rem;
+}
+
+.swiper {
+  width: 100%;
+  height: 75vh;
+}
+
+.slide-container {
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center ;
+  align-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 30px;
+  height: 100%;
+  width:50%;
+}
+.card {
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  border-radius: 1.25rem;
+  border: 1px solid black;
+  background-color: #0000004f;
+  background: radial-gradient(circle, rgba(0, 255, 135, 0.3), transparent 30%);
+  transition: 0.4s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background: rgba(255, 255, 255, 0.396);
+  border-radius: 50%;
+  z-index: 100;
+  color: black;
+}
+.swiper-button-prev{
+  margin-left: -2.4rem;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+}
+
+/* ------------------------------------Courses------------------ */
+.courses{
+  width: 80vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.course-card {
+    width: 100%;
+    max-width: 350px;
+    background: #B7E4C7;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: transform .3s ease, box-shadow .3s ease;
+    cursor: pointer;
+}
+
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+.course-img {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale .4s ease;
+}
+
+.course-card:hover .course-img img {
+    scale: 1.1;
+}
+
+.course-info {
+    padding: 15px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .course-title {
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+}
+
+.course-price {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.offer-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e63946;
+}
+
+.actual-price {
+    font-size: 1rem;
+    color: #777;
+    text-decoration: line-through;
+}
+
+/* -----------------------contact------------------- */
+.contact{
+ position: fixed;
+ padding: 10px;
+ background: #1B4332;
+ bottom: 2rem;
+ right: 3rem;
+ border-radius: 10px;
+ z-index: 1000;
+
+}
+.contact a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+
+/* ------------------------------MEDIA-------------------- */
+/* ------------------------------------------------------------Mobile */
+@media (max-width: 480px) {
+  .nav-logo {
+    display: flex;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1000;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 200px;
+    background: rgba(0, 0, 0, 0.714);
+    transition: 0.4s ease;
+  }
+  .nav-links.show {
+    right: 0;
+    flex-direction: column;
+  }
+  .navbar ul {
+    padding: 1rem 0;
+    justify-content: space-evenly;
+    font-size: 1rem;
+  }
+  .nav-links li {
+    padding-left: 40px;
+    color: aliceblue;
+  }
+  .navbar ul a:hover {
+    background: rgba(0, 0, 0, 0.714) !important;
+    color: black !important;
+    transform: none !important;
+  }
+  .name {
+    width: 98vw;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    font-family: "cinzel", "poppins";
+    padding: 0;
+    margin-top: 10rem;
+    margin-left: 4rem;
+  }
+  .hero h3 {
+    font-family: "cinzel", "poppins";
+    font-size: 2.3rem;
+    padding-left: 0;
+    margin-left: 4rem;
+  }
+  .address {
+    width: 66%;
+    padding-left: 0;
+    margin-left: 4rem;
+    padding-top: 0.2rem;
+    font-size: 0.57rem;
+  }
+  .logo {
+    position: absolute;
+    top: 0.56rem;
+    left: 1.62rem;
+    height: 35px;
+    width: 35px;
+  }
+  .logo img {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .instrument-head h3{
+    padding: 0;
+    margin: auto;
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+  
+.contact{
+ position: fixed;
+ padding: 10px;
+ background: #1B4332;
+ bottom: 1rem;
+ right: 2rem;
+ border-radius: 10px;
+ z-index: 1000;
+
+}
+.contact a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+}
+}
+
+
+
+
+
+
+/*----------------------------------------------------------- Tablets Portrait */
+@media (min-width: 480px) and (max-width: 768px) {
+  .navbar ul {
+    padding: 1.2rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+    padding-left: 4rem;
+    padding-top: 8rem;
+  }
+
+  .hero h3 {
+    font-size: 2rem;
+    padding-left: 4rem;
+  }
+
+  .address {
+    padding-left: 4rem;
+    font-size: 0.8rem;
+    width: 70%;
+  }
+
+  .logo img {
+    width: 70%;
+    height: auto;
+    padding: 1rem 2rem;
+  }
+  .instrument-head h3{
+    padding: 0;
+    margin: auto;
+    font-size: 2.45rem;
+    font-weight: 500;
+  }
+}
+
+
+/* ----------------------------------------------------Tablets Landscape or Small Laptop */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar ul {
+    padding: 1.5rem 6rem;
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 5rem;
+    padding-left: 8rem;
+    padding-top: 10rem;
+  }
+
+  .hero h3 {
+    font-size: 2.5rem;
+    padding-left: 8rem;
+  }
+
+  .address {
+    padding-left: 8rem;
+    font-size: 0.85rem;
+  }
+
+  .logo img {
+    width: 75%;
+    height: auto;
+    padding: 0rem 2rem;
+  }
+}

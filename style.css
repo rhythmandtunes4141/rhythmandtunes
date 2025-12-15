@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -6,50 +6,77 @@ html{
   padding: 0;
   margin: 0;
   font-family: "Montserrat", "poppins", sans-serif;
-  /* background: rgb(255, 182, 87); */
+  
 }
 body {
-  background: rgb(222, 245, 200);
+  /* background: linear-gradient(180deg, #f1faee 0%, #e9f5db 50%, #d8f3dc 100%); */
+  background-color: #F1FAEE;
+
+  color: #1b4332;
 }
 
 .main {
   height: 100vh;
   padding-bottom: 5rem;
+  /* background: linear-gradient(180deg, #f1faee 0%, #e9f5db 50%, #d8f3dc 100%); */
+  /* background: linear-gradient(180deg, #f1faee 0%, #e9f5db 50%, #d8f3dc 100%); */
+
+
+}
+.about-container,
+.instruments-container,
+.courses {
+  padding: 4rem 0;
+}
+section,
+.about-container,
+.instruments-container,
+.courses {
+  border-radius: 24px;
 }
 
 /* --------------------------NAVBAR----------------------- */
 .navbar {
-  /* border-bottom: 1px solid rgb(0, 0, 0); */
+  /* background: rgba(246, 251, 247, 0.75); */
+  /* backdrop-filter: blur(10px); */
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
+
 .navbar ul {
   list-style: none;
   font-family: "poppins", sans-serif;
   font-size: 1.43rem;
+  padding: 1.25rem 15rem;
   display: flex;
   flex-direction: row;
-  padding: 1.25rem 15rem;
   justify-content: space-evenly;
 }
 .navbar ul a {
-  color: black;
   padding: 10px;
   text-decoration: none;
   border-radius: 15px;
   transition: all 0.5s ease;
+  color: #1b4332;
+  font-weight: 500;
 }
+
 .nav-logo {
   display: none;
 }
 
 .navbar ul a:hover {
-  background: rgba(0, 255, 136, 0.166);
-  color: #1f3a1f;
+  background: #95D5B2;
+  color: #1B4332;
 }
+
 
 /* -------------------------------HOME-------------------------------- */
 .hero {
   display: flex;
   flex-wrap: wrap;
+  /* background: linear-gradient(135deg, #f6fbf7 0%, #d8f3dc 60%, #b7e4c7 100%); */
 }
 .name {
   width: 49vw;
@@ -65,16 +92,19 @@ h3 {
 
 .hero h1 {
   padding-top: 13rem;
+  color: #1b4332;
   font-size: 6rem;
   font-weight: 800;
   display: inline-block;
 }
 .hero h3 {
   font-size: 3rem;
+  color: #40916c;
   font-weight: 600;
   display: inline-block;
 }
 .address {
+  color: #5f6f65;
   font-size: 0.87rem;
   padding-left: 12rem;
   padding-top: 1rem;
@@ -106,7 +136,6 @@ h3 {
 .about-img {
   width: 40%;
   min-width: 250px;
-
   background: pink;
 }
 .about-details {
@@ -116,16 +145,18 @@ h3 {
 }
 
 /* ------------------------------------------INSTRUMENTS------------------------------ */
-.instrument-head h3{
-  font-family: "poppins",sans-serif;
-  font-size: 3rem;
-  font-weight: 400;
-  padding-left: 3rem;
-  padding-bottom: 2rem;
-  color: #1B4332;
-
+.instrument-head h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #1b4332;
+  padding: 0;
+  text-align: center;
 }
+
+
 .instruments-container {
+  background: linear-gradient(180deg, #f1faee 0%, #e9f5db 50%, #d8f3dc 100%);
   width: 85vw;
   margin: auto;
   margin-top: 50px;
@@ -141,32 +172,39 @@ h3 {
 .slide-container {
   display: flex !important;
   flex-direction: row;
-  justify-content: center ;
+  justify-content: center;
   align-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   font-size: 30px;
   height: 100%;
-  width:50%;
-}
-.card {
-  display: inline-block;
-  width: 40%;
-  height: 40%;
-  border-radius: 1.25rem;
-  border: 1px solid black;
-  background-color: #0000004f;
-  background: radial-gradient(circle, rgba(0, 255, 135, 0.3), transparent 30%);
-  transition: 0.4s ease;
+  width: 50%;
 }
 
+.card {
+  width: 40%;
+  height: 40%;
+  /* border-radius: 1.25rem; */
+  /* background: linear-gradient(145deg, #d8f3dc, #b7e4c7); */
+  /* border: 1px solid rgba(0, 0, 0, 0.08); */
+  transition: all 0.4s ease;
+  background: linear-gradient(145deg, #ffffff, #d8f3dc);
+  border: none;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 .card:hover::before {
   opacity: 1;
 }
 
+/* .card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+} */
+
 .card:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 15px 30px rgba(27, 67, 50, 0.25);
 }
 
 .swiper-button-prev,
@@ -176,7 +214,7 @@ h3 {
   z-index: 100;
   color: black;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   margin-left: -2.4rem;
 }
 .swiper-button-prev::after,
@@ -185,7 +223,7 @@ h3 {
 }
 
 /* ------------------------------------Courses------------------ */
-.courses{
+.courses {
   width: 80vw;
   margin: 2rem auto;
   display: flex;
@@ -194,94 +232,98 @@ h3 {
   gap: 20px;
 }
 .course-card {
-    width: 100%;
-    max-width: 350px;
-    background: #B7E4C7;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
-    transition: transform .3s ease, box-shadow .3s ease;
-    cursor: pointer;
+  width: 100%;
+  max-width: 350px;
+  /* background: #b7e4c7; */
+  background: linear-gradient(180deg, #ffffff, #d8f3dc);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
-
 .course-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
 
 .course-img {
-    width: 100%;
-    height: 230px;
-    overflow: hidden;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
 }
 
 .course-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: scale .4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 0.4s ease;
 }
 
 .course-card:hover .course-img img {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .course-info {
-    padding: 15px;
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-  }
-  
-  .course-title {
-    margin: 0;
-    padding-left: 0;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #333;
-    font-family: "Poppins", sans-serif;
+  padding: 15px;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-title {
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  font-family: "Poppins", sans-serif;
 }
 
 .course-price {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .offer-price {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #e63946;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e63946;
 }
 
 .actual-price {
-    font-size: 1rem;
-    color: #777;
-    text-decoration: line-through;
+  font-size: 1rem;
+  color: #777;
+  text-decoration: line-through;
 }
 
 /* -----------------------contact------------------- */
-.contact{
- position: fixed;
- padding: 10px;
- background: #1B4332;
- bottom: 2rem;
- right: 3rem;
- border-radius: 10px;
- z-index: 1000;
+.contact {
+  position: fixed;
+  padding: 10px;
+  bottom: 2rem;
+  right: 3rem;
+  border-radius: 10px;
+  z-index: 1000;
+  /* background: linear-gradient(135deg, #1b4332, #40916c); */
+  /* background: linear-gradient(135deg, #25d366, #128c7e); */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
+  background: #1B4332;
+  box-shadow: 0 10px 25px rgba(27,67,50,0.4);
 
 }
-.contact a{
+.contact a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: 300;
 }
 
 /* ------------------------------MEDIA-------------------- */
+
 /* ------------------------------------------------------------Mobile */
 @media (max-width: 480px) {
   .nav-logo {
@@ -354,34 +396,28 @@ h3 {
     height: 100%;
     width: 100%;
   }
-  .instrument-head h3{
+  .instrument-head h3 {
     padding: 0;
     margin: auto;
     font-size: 1.45rem;
     font-weight: 500;
   }
-  
-.contact{
- position: fixed;
- padding: 10px;
- background: #1B4332;
- bottom: 1rem;
- right: 2rem;
- border-radius: 10px;
- z-index: 1000;
 
+  .contact {
+    position: fixed;
+    padding: 10px;
+    background: #1b4332;
+    bottom: 1rem;
+    right: 2rem;
+    border-radius: 10px;
+    z-index: 1000;
+  }
+  .contact a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+  }
 }
-.contact a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-weight: 300;
-}
-}
-
-
-
-
-
 
 /*----------------------------------------------------------- Tablets Portrait */
 @media (min-width: 480px) and (max-width: 768px) {
@@ -412,14 +448,13 @@ h3 {
     height: auto;
     padding: 1rem 2rem;
   }
-  .instrument-head h3{
+  .instrument-head h3 {
     padding: 0;
     margin: auto;
     font-size: 2.45rem;
     font-weight: 500;
   }
 }
-
 
 /* ----------------------------------------------------Tablets Landscape or Small Laptop */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -448,5 +483,8 @@ h3 {
     width: 75%;
     height: auto;
     padding: 0rem 2rem;
+  }
+  .instrument-head h3{
+    padding: 0;
   }
 }

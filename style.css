@@ -378,7 +378,7 @@ h3 {
 .gallery-grid img {
   width: 100%;
   height: 240px;
-  object-fit: scale-down;
+  object-fit: cover;
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
@@ -409,167 +409,503 @@ h3 {
 
 /* ------------------------------MEDIA-------------------- */
 
-/* ------------------------------------------------------------Mobile */
-@media (max-width: 480px) {
-  .nav-logo {
-    display: flex;
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    z-index: 1000;
+/* ----------------------------------------------------Tablets Landscape or Small Laptop */
+@media (min-width: 768px) and (max-width: 1024px) {
+ .navbar ul {
+    padding: 1.25rem 6rem;
+    font-size: 1.25rem;
   }
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 60%;
-    height: 200px;
-    background: rgba(0, 0, 0, 0.714);
-    transition: 0.4s ease;
-  }
-  .nav-links.show {
-    right: 0;
-    flex-direction: column;
-  }
-  .navbar ul {
-    padding: 1rem 0;
-    justify-content: space-evenly;
-    font-size: 1rem;
-  }
-  .nav-links li {
-    padding-left: 40px;
-    color: aliceblue;
-  }
-  .navbar ul a:hover {
-    background: rgba(0, 0, 0, 0.714) !important;
-    color: black !important;
-    transform: none !important;
-  }
-  .name {
-    width: 98vw;
-  }
-  .hero h1 {
-    font-size: 3rem;
-    font-family: "cinzel", "poppins";
-    padding: 0;
-    margin-top: 10rem;
-    margin-left: 4rem;
-  }
-  .hero h3 {
-    font-family: "cinzel", "poppins";
-    font-size: 2.3rem;
-    padding-left: 0;
-    margin-left: 4rem;
-  }
-  .address {
-    width: 66%;
-    padding-left: 0;
-    margin-left: 4rem;
-    padding-top: 0.2rem;
-    font-size: 0.57rem;
-  }
-  .logo {
-    position: absolute;
-    top: 0.56rem;
-    left: 1.62rem;
-    height: 35px;
-    width: 35px;
-  }
-  .logo img {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%;
-  }
-  .instrument-head h3 {
-    padding: 0;
-    margin: auto;
-    font-size: 1.45rem;
-    font-weight: 500;
+  .hero {
+    width: 90vw;
   }
 
-  .contact {
-    position: fixed;
-    padding: 10px;
-    background: #1b4332;
-    bottom: 1rem;
-    right: 2rem;
-    border-radius: 10px;
-    z-index: 1000;
+  .hero h1,
+  .hero h3,
+  .address {
+    padding-left: 4rem;
   }
-  .contact a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
+
+  .hero h1 {
+    font-size: 4.5rem;
+    padding-top: 6rem;
   }
+
+  .hero h3 {
+    font-size: 2.2rem;
+  }
+
+  .logo img {
+    width: 70%;
+    padding: 1rem 3rem;
+    margin-top: 4rem;
+  }
+
+  /* About */
+  .about-container {
+    width: 90vw;
+  }
+
+  .about-details {
+    font-size: 0.95rem;
+  }
+
+  .about-container {
+    width: 90vw;
+    gap: 1.5rem;
+  }
+
+  .about-img {
+    width: 45%;
+    margin-top: 3rem;
+  }
+
+  .about-img img {
+    width: 95%;
+    padding-left: 0.5rem;
+  }
+
+  .about-details {
+    width: 90%;
+    font-size: 0.95rem;
+    padding: 22px;
+  }
+
+  .about-details h3 {
+    text-align: center;
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  .about-details p {
+    font-size: 0.95rem;
+  }
+
+  .qualifications li {
+    font-size: 0.9rem;
+  }
+  .instruments-container {
+    width: 90vw;
+    padding-bottom: 1.5rem;
+  }
+
+  .instrument-head h3 {
+    font-size: 2.2rem;
+    padding: 1.5rem;
+  }
+  /* .card .mouth_organ{
+    margin-top: -2rem;
+  } */
+
+  .card {
+    width: 45%;
+    height: auto;
+  }
+
+  .card img {
+    height: auto;
+  }
+
+  .swiper {
+    height: 60vh;
+  }
+
+  .slide-container {
+    gap: 0.8rem;
+  }
+
+   .classes-info {
+    max-width: 85%;
+    padding: 30px 15px;
+  }
+
+  .classes-info h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    margin-bottom: 30px;
+  }
+
+  .fee-card {
+    padding: 20px;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+  }
+
+  .fee-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .fee-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .fee-card::before {
+    font-size: 35px;
+    top: -12px;
+    right: 15px;
+  }
+
+  .rules {
+    padding: 25px;
+  }
+
+  .rules h2 {
+    font-size: 1.5rem;
+  }
+   .gallery-section {
+    width: 90vw;
+    padding: 3rem 1.5rem;
+  }
+
+  .gallery-title {
+    font-size: 2.2rem;
+  }
+
+  .gallery-grid {
+    gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .gallery-grid img {
+    height: 200px;
+  }
+
 }
 
 /*----------------------------------------------------------- Tablets Portrait */
-@media (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 720px) {
+  .navbar {
+    position: relative;
+    padding: 1rem 2rem;
+  }
+
+  .nav-logo {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
   .navbar ul {
-    padding: 1.2rem 2rem;
-    font-size: 1.1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(253, 227, 227, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    display: none;
+  }
+
+  .navbar ul a {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name,
+  .logo {
+    width: 100%;
+  }
+
+  .hero h1,
+  .hero h3,
+  .address {
+    padding-left: 0;
   }
 
   .hero h1 {
-    font-size: 4rem;
-    padding-left: 4rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
+    font-size: 3.5rem;
   }
 
   .hero h3 {
     font-size: 2rem;
-    padding-left: 4rem;
   }
 
   .address {
-    padding-left: 4rem;
-    font-size: 0.8rem;
-    width: 70%;
+    font-size: 0.85rem;
+    padding: 1rem 2rem;
   }
 
   .logo img {
-    width: 70%;
+    margin: 2rem auto;
+    width: 55%;
     height: auto;
-    padding: 1rem 2rem;
   }
+
+   .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+    border-left: none;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .about-img img {
+    width: 65%;
+    padding-left: 0;
+    border-radius: 20%;
+  }
+
+  .about-details {
+    width: 85%;
+    margin: 20px 0;
+    padding: 18px;
+    border-right: none;
+    font-size: 0.95rem;
+  }
+
+  .about-details h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+   .instruments-container {
+    width: 95vw;
+    padding-bottom: 1rem;
+  }
+
   .instrument-head h3 {
-    padding: 0;
-    margin: auto;
-    font-size: 2.45rem;
-    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .card img {
+    height: 200px;
+    object-fit: contain;
+  }
+
+  .slide-container {
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+  }
+
+  .swiper {
+    height: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+  .classes-info {
+    max-width: 95%;
+    padding: 20px 10px;
+  }
+
+  .classes-info h1 {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+
+  .fee-card {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+  }
+
+  .fee-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .fee-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .fee-card::before {
+    font-size: 30px;
+    top: -10px;
+    right: 10px;
+  }
+
+  .rules {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .rules h2 {
+    font-size: 1.3rem;
+  }
+
+  .rules ol {
+    padding-left: 15px;
+  }
+
+  .gallery-section {
+    width: 95vw;
+    padding: 2.5rem 1rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-grid {
+    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+
+  .gallery-grid img {
+    height: 160px;
   }
 }
 
-/* ----------------------------------------------------Tablets Landscape or Small Laptop */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .navbar ul {
-    padding: 1.5rem 6rem;
-    font-size: 1.2rem;
+
+/* ------------------------------------------------------------Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.8rem 1.2rem;
   }
 
+  .nav-logo {
+    font-size: 1.6rem;
+  }
+  .hero .logo {
+    display: none;
+  }
+  .navbar ul a {
+    font-size: 1rem;
+    padding: 12px 0;
+  }
   .hero h1 {
-    font-size: 5rem;
-    padding-left: 8rem;
-    padding-top: 10rem;
+    font-size: 2.6rem;
   }
 
   .hero h3 {
-    font-size: 2.5rem;
-    padding-left: 8rem;
+    font-size: 1.6rem;
   }
 
   .address {
-    padding-left: 8rem;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    line-height: 1.4;
   }
 
   .logo img {
-    width: 75%;
-    height: auto;
-    padding: 0rem 2rem;
+    width: 65%;
   }
-  .instrument-head h3 {
+
+  .about-details {
+    
+    font-size: 0.9rem;
+    padding: 18px;
+  }
+
+  .about-details h3 {
+    font-size: 1.3rem;
     padding: 0;
   }
+  .about-img img {
+    width: 75%;
+  }
+
+  .about-details {
+    width: 85%;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-details p {
+    font-size: 0.9rem;
+  }
+
+  .qualifications li {
+    font-size: 0.85rem;
+  }
+  .instrument-head h3 {
+    font-size: 1.5rem;
+    padding: 0.8rem;
+  }
+
+  .card img {
+    height: 150px;
+  }
+
+  .card span {
+    font-size: 0.85rem;
+    padding: 0.2rem 1rem;
+    top: -20%;
+  }
+
+   .classes-info h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .fee-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .fee-card h3 {
+    font-size: 1rem;
+  }
+
+  .fee-card::before {
+    font-size: 25px;
+    top: -8px;
+    right: 8px;
+  }
+
+  .rules {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+
+  .rules h2 {
+    font-size: 1.1rem;
+  }
+
+  .rules ol {
+    padding-left: 12px;
+  }
+   .gallery-section {
+    width: 70%;
+    padding: 2rem 0.5rem;
+  }
+
+  .gallery-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery-grid {
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .gallery-grid img {
+    height: 120px;
+  }
 }
+

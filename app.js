@@ -1,6 +1,6 @@
 
 
-let NavLinks= document.querySelector(".nav-links");
+let NavLinks = document.querySelector(".nav-links");
 let NavLogo = document.querySelector(".nav-logo");
 
 NavLogo.addEventListener("click", () => {

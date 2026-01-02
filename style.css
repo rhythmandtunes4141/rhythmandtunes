@@ -14,7 +14,8 @@ body {
 
 .about-container,
 .instruments-container,
-.courses {
+.courses,
+.gallery-section {
   margin: 4rem auto;
 }
 
@@ -55,10 +56,10 @@ section,
   display: none;
 }
 
-.navbar ul a:hover {
+/* .navbar ul a:hover {
   background: #00000063;
   color: #ffffff;
-}
+} */
 
 /* -------------------------------HOME-------------------------------- */
 .hero {
@@ -483,6 +484,7 @@ h3 {
   .qualifications li {
     font-size: 0.9rem;
   }
+
   .instruments-container {
     width: 90vw;
     padding-bottom: 1.5rem;
@@ -492,17 +494,15 @@ h3 {
     font-size: 2.2rem;
     padding: 1.5rem;
   }
-  /* .card .mouth_organ{
-    margin-top: -2rem;
-  } */
 
   .card {
     width: 45%;
-    height: auto;
+    margin-bottom: 1rem;
   }
 
   .card img {
-    height: auto;
+    height: 100%;
+    object-fit: scale-down;
   }
 
   .swiper {
@@ -571,7 +571,7 @@ h3 {
     height: 200px;
   }
 
-}
+} 
 
 /*----------------------------------------------------------- Tablets Portrait */
 @media (max-width: 720px) {
@@ -890,7 +890,7 @@ h3 {
     padding-left: 12px;
   }
    .gallery-section {
-    width: 70%;
+    width: 90%;
     padding: 2rem 0.5rem;
   }
 
@@ -906,6 +906,10 @@ h3 {
 
   .gallery-grid img {
     height: 120px;
+  }
+  .contact{
+    bottom: 1rem;
+    right:.75rem;
   }
 }
 

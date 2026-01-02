@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/media/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Rhythm and Tunes</title>
   </head>
   <body>
@@ -28,10 +29,25 @@
       <nav>
         <div class="navbar">
           <ul class="nav-links">
-            <a href="#home"><li>HOME</li></a>
-            <a href="#about"><li>ABOUT</li></a>
-            <a href="#instruments"><li>INSTRUMENTS</li></a>
-            <a href="#gallery"><li>GALLERY</li></a>
+            <a  
+            data-aos="fade-down"
+            data-aos-once="false" 
+            data-aos-duration="1500"href="#home"><li>HOME</li></a>
+            <a 
+            data-aos="fade-down"
+            data-aos-once="false" 
+            data-aos-delay="100"
+            data-aos-duration="1500" href="#about"><li>ABOUT</li></a>
+            <a 
+            data-aos="fade-down"
+            data-aos-once="false" 
+            data-aos-delay="200"
+            data-aos-duration="1500"href="#instruments"><li>INSTRUMENTS</li></a>
+            <a 
+            data-aos="fade-down"
+            data-aos-once="false" 
+            data-aos-delay="300"
+            data-aos-duration="1500" href="#gallery"><li>GALLERY</li></a>
           </ul>
           <span class="nav-logo"><i class="fa-solid fa-bars"></i> </span>
         </div>
@@ -49,7 +65,11 @@
             Kasarvadavali, G.B. Road,Thane (West) - 400615
           </span>
         </div>
-        <div class="logo">
+        <div class="logo" 
+        data-aos="fade-left"
+        data-aos-once="false" 
+        data-aos-delay="1000"
+        data-aos-duration="1500">
           <img src="/media/logo.png" alt="logo_img" />
         </div>
       </div>
@@ -194,8 +214,18 @@
   <h2 class="gallery-title">Gallery</h2>
 
   <div class="gallery-grid">
+    <div class="aos-con" data-aos="fade-up"
+    data-aos-once="false" 
+    data-aos-delay="200"
+    data-aos-duration="2000">
     <img src="/media/gallery_pic_01.jpeg" alt="Gallery_pic_01">
-    <img src="/media/gallery_pic_02.jpeg" alt="Gallery_pic_02">
+    </div>
+    <div class="aos-con"data-aos="fade-up"
+    data-aos-once="false" 
+    data-aos-delay="400"
+    data-aos-duration="2000">
+      <img src="/media/gallery_pic_02.jpeg" alt="Gallery_pic_02">
+    </div>
     <!-- <img src="images/img3.jpg" alt="Gallery_pic_03"> -->
     <!-- <img src="images/img4.jpg" alt="Gallery_pic_04"> -->
     <!-- Add unlimited images here -->
@@ -216,5 +246,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
